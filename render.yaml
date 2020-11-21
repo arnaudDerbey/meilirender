@@ -2,6 +2,7 @@ services:
 - type: web
   name: meilisearch
   env: docker
+  dockerCommand: FROM getmeili/meilisearch
   envVars:
   - key: MEILI_DB_PATH
     value: /var/lib/meilifiles
