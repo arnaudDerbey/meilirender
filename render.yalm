@@ -1,0 +1,11 @@
+services:
+- type: web
+  name: meilisearch
+  env: docker
+  envVars:
+  - key: MEILI_DB_PATH
+    value: /
+ disk:
+    name: mysql
+    mountPath: /var/lib/mysql
+    sizeGB: 10
