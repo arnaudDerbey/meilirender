@@ -7,5 +7,5 @@ services:
     value: /var/lib/meili
  disk:
     name: mysql
-    mountPath: /var/lib/mysql
+    mountPath: /var/lib/redis
     sizeGB: 10
